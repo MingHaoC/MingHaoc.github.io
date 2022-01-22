@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-  font-family: 'Nunito Sans', sans-serif;
+body {
+  font-family: "Nunito Sans", sans-serif;
   display: block;
   overflow: hidden;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 /* Split the screen in half */
@@ -44,38 +44,38 @@ body{
   margin-bottom: 20px;
 }
 
-p{
- font-size: 25pt;
- margin-top: 20px;
+p {
+  font-size: 25pt;
+  margin-top: 20px;
 }
 
-h3{
-    transform: translate(0, 100%);
-    font-size: 30pt;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    margin-bottom: 20px;
+h3 {
+  transform: translate(0, 100%);
+  font-size: 30pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
-.contact{
+.contact {
   transform: translate(0, 200%);
   display: fixed;
   font-size: 15pt;
   bottom: 0;
 }
 
-a:hover{
-    cursor: pointer;
-    color: #F33446;
+a:hover {
+  cursor: pointer;
+  color: #f33446;
 }
 
-i{
-   margin: 0 0.5em;
+i {
+  margin: 0 0.5em;
 }
 
-a{
+a {
   margin-left: 2px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 /* Control the right side */
@@ -85,74 +85,80 @@ a{
   float: left;
   width: 50%;
   height: 100%;
+  overflow-y: scroll;
 }
 
-.card{
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 30px;
   margin: 5%;
 }
 
-.top{
+.top {
   float: right;
   font-size: 20pt;
 }
 
-
-.container{
+.container {
   padding: 2px 16px;
 }
 
-ul{
-  font-size : 15pt;
+ul {
+  font-size: 15pt;
 }
 
-
-li{
-  margin-bottom : 1.5%;
+li {
+  margin-bottom: 1.5%;
   display: list-item;
   text-align: -webkit-match-parent;
 }
 
 .container:after {
-    /* content: ""; */
-    /* display: table; */
-    clear: both;
-    width: 100%;
+  /* content: ""; */
+  /* display: table; */
+  clear: both;
+  width: 100%;
 }
-
 
 /*  */
 @media screen and (max-width: 1350px), screen and (max-height: 730px) {
+  h3 {
+    margin-top: 50pt;
+    transform: translate(0, -100%);
+  }
 
-    h3{
-      margin-top: 50pt;
-      transform: translate(0, -100%);
-    }
+  .contact {
+    transform: translate(0, -200%);
+  }
 
-    .contact{
-      transform: translate(0, -200%);
-    }
+  body {
+    overflow: auto;
+    height: 100%;
+  }
 
-    body{
-      height : 100%;
-      overflow-y: scroll;
-    }
+  html {
+    overflow: hidden;
+  }
 
-    .container {
-        height: 100%;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-    }
+  .container {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .right {
-        width: 100%;
-        overflow: visible;
-    }
+  .right {
+    width: 100%;
+    overflow: hidden;
+  }
 
-    .left {
-        margin-top: 0;
-        width: 100%;
-    }
+  .left {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .centered {
+    margin-bottom: 5%;
+  }
 }

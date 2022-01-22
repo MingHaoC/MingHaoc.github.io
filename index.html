@@ -1,73 +1,154 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <!-- Imports -->
-  <link rel="stylesheet" href="Website.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-</head>
+  <head>
+    <!-- Imports -->
+    <link rel="stylesheet" href="Website.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <div class = "container">
-  <!-- Left side -->
-  <div class="left">
-    <div class="centered">
-      <img src="Resources/img.jpg" alt="Picture of my face">
-      <div class = "name">Ming Hao Chen</div>
-      <p> I am a third year Computer Science Student studying at the University of Windsor, currently I'm turning coffe into code.  My goal is to become a software developer.</p>
-      <h3>Contact Info</h3>
-      <div class = "contact">
-        <i class="fas fa-at">
-           <a href="mailto:chen1lf@uwindsor.com" style = "text-decoration: none">
-             chen1fl@uwindsor.ca
-             </a>
-        </i>
-        <i class= "icon fab fa-linkedin-in">
-          <a href="https://www.linkedin.com/in/minghaoc/" target= "_blank" style = "text-decoration: none">
-            Ming Chen
-          </a>
-        </i>
-        <i class = "icon fab  fa-github">
-          <a href="https://github.com/MingHaoC" target= "_blank" style = "text-decoration: none">
-            Ming Chen
-          </a>
-        </i>
-        <i class = "icon far fa-file-pdf"></i>
-        <a href="http://mingchen.ca/Resources/Resume.pdf" target= "_blank" style = "text-decoration: none"> Resume </a>
+  <body>
+    <div class="container">
+      <!-- Left side -->
+      <div class="left">
+        <div class="centered">
+          <img src="Resources/img.jpg" alt="Picture of my face" />
+          <div class="name">Ming Hao Chen</div>
+          <p>
+            I am a fourth year Computer Science Student studying at the
+            University of Windsor, currently I'm turning coffe into code. My
+            goal is to become a software developer.
+          </p>
+          <h3>Contact Info</h3>
+          <div class="contact">
+            <i class="fas fa-at">
+              <a
+                href="mailto:chen1lf@uwindsor.com"
+                style="text-decoration: none"
+              >
+                chen1fl@uwindsor.ca
+              </a>
+            </i>
+            <i class="icon fab fa-linkedin-in">
+              <a
+                href="https://www.linkedin.com/in/minghaoc/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                Ming Chen
+              </a>
+            </i>
+            <i class="icon fab fa-github">
+              <a
+                href="https://github.com/MingHaoC"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                Ming Chen
+              </a>
+            </i>
+            <i class="icon far fa-file-pdf"></i>
+            <a
+              href="http://mingchen.ca/Resources/Resume.pdf"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              Resume
+            </a>
+          </div>
+        </div>
       </div>
 
+      <!-- Right side -->
+      <div class="right">
+        <div class="card" style="background-color: #f6f9ed">
+          <div class="top">
+            <a
+              href="https://github.com/Meeting-Maker"
+              target="_blank"
+              style="text-decoration: none"
+              class="icon fab fa-github"
+            >
+            </a>
+          </div>
+          <div class="cardcontainer">
+            <div class="name">Meetingmaker</div>
+            <ul>
+              <li>
+                Used React, Express and MYSQL to create an web application for
+                users to find common availability and meeting time
+              </li>
+              <li>
+                Real time updated on user votes, new meeting time and chat using
+                socket.io
+              </li>
+              <li>
+                Used AWS EC2 to host the website, Nginx was used for running the
+                front end and PM2 was used for hosing the server
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #ddfff7">
+          <div class="top">
+            <a
+              href="https://github.com/Software-Engineering-Group-9"
+              target="_blank"
+              style="text-decoration: none"
+              class="icon fab fa-github"
+            >
+            </a>
+          </div>
+          <div class="cardcontainer">
+            <div class="name">Doable</div>
+            <ul>
+              <li>
+                Web based productivity application which allows users to input
+                their schedule and get a personalized work timetable in return
+              </li>
+              <li>Added security with JWToken to authenticate users</li>
+              <li>
+                Used JDBC library to query and update data to Oracle Database
+              </li>
+              <li>
+                Created local Oracle Database with Docker for development
+                purposes
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #e2f0ff">
+          <div class="top">
+            <a
+              href="https://github.com/prntscrnproject"
+              target="_blank"
+              style="text-decoration: none"
+              class="icon fab fa-github"
+            >
+            </a>
+          </div>
+          <div class="cardcontainer">
+            <div class="name">Prntscrn</div>
+            <ul>
+              <li>
+                Created an easy way to share screenshot taken with others
+                through the use of a simple URL link pop up
+              </li>
+              <li>
+                Used HTTP requests to authenticate users, uploading of
+                screenshots and testing authentication tokens
+              </li>
+              <li>Created an installer to install the application</li>
+              <li>Editing the registry to have the program start on startup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
- <!-- Right side -->
-  <div class="right">
-        <div class = "card" style = "background-color: #e2f0ff;">
-          <div class = "top">
-              <a href = "https://github.com/prntscrnproject" target= "_blank" style = "text-decoration: none" class = "icon fab  fa-github"> </a>
-          </div>
-          <div class = "container">
-            <div class = "name"> Prntscrn </div>
-            <ul>
-              <li>Online application uses to capture desktop screenshots and sharing them via a simple url link</li>
-              <li>Edit the registry to have the application start on startup</li>
-              <li>Using HTTP request to register, login, and upload screenshots to the internet</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class = "card" style = "background-color: #ffe6ff;">
-          <div class = "top">
-              <a href = "https://github.com/MingHaoC/Bot" target= "_blank" style = "text-decoration: none" class = "icon fab  fa-github"> </a>
-          </div>
-          <div class = "container">
-            <div class = "name"> Discord Bot </div>
-            <ul>
-              <li>Web scarping data from popular media site Reddit, based on user input (Subreddit, sorting and time period)</li>
-              <li>Language filter, uses to censor out racist words or any words of the user choosing</li>
-              <li>Basic calculator, welcoming and leaving messages when user joins or leaves the discord server, and assigning new user with role</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </div>
-</body>
+  </body>
 </html>
